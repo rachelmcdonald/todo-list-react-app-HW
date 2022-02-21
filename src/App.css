@@ -1,38 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@300&display=swap');
+
 .App {
-  text-align: center;
+  width: 60%;
+  margin: 0 auto;
+  font-family: 'Noto Sans Display', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: #ffeafe;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1 {
+  font-family: 'Caveat', cursive;
+  color:rgb(146, 28, 172)
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+ul {
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+li {
+  margin: 20px 0;
+  padding: 10px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+}
+li span {
+  padding: 8px;
+}
+li button {
+  background: #f2360c;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+li.not-high {
+  border: 4px solid #f08603;
+  border-radius: 10px;
+  color: #f08603;
+  font-size: 20px;
+}
+li.high {
+  border: 4px solid #ff481f;
+  border-radius: 10px;
+  color:#f2360c;
+  font-size: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+label {
+  color:rgb(68, 14, 74);
+  font-weight: bold;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input[type="text"] {
+  padding: 10px;
+  width: 50%;
+  margin:5px;
+  background-color: cornsilk;
+  border-radius: 10px;
 }
+
+input:hover {
+  background-color: #ffffff;
+  color:rgb(0, 0, 0);
+  opacity: 75%;
+  transition: .5s;
+}
+
+button, input[type="submit"]{
+  border: 1px solid rgb(68, 14, 74);
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  background: rgb(133, 64, 137);
+  color: #fff;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #5e190a;
+  color:azure;
+  opacity: 75%;
+  transition: .5s;
+}
+
